@@ -13,11 +13,19 @@ This script is the culmination of many scripts and gists from github with featur
 ## How to Run
 Paste this command into Powershell (admin):
 ```
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
+# Long URL
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/thegamerhat/old-win10-utility/master/old-win10-utility.ps1'))
+
+# Short URL
+iex ((New-Object System.Net.WebClient).DownloadString('https://bit.ly/3bv7jOE'))
 ```
 Or, shorter:
 ```
-iwr -useb https://git.io/JJ8R4 | iex
+# Long URL
+iwr -useb https://raw.githubusercontent.com/thegamerhat/old-win10-utility/master/old-win10-utility.ps1 | iex
+
+# Short URL
+iwr -useb https://bit.ly/3bv7jOE | iex
 ```
 
 For complete details check out https://christitus.com/debloat-windows-10-2020/
